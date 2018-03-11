@@ -10,6 +10,14 @@ public class RESTAPITest {
 		System.out.println("postJira");
 		System.out.println("postJira2");
 		System.out.println("postJira3");
+		//feere
+		//ffgf
+		//fgf
+		System.out.println("postJira4");
+		System.out.println("postJira5");
+		System.out.println("postJira6");
+		System.out.println("postJira7");
+		
 		
 		
 		
@@ -20,6 +28,8 @@ public class RESTAPITest {
 	@Test
 	public void deleteTwitter()
 	{
-		System.out.println("deleteTwitter");	
+		System.out.println("deleteTwitter");
+		
+		
 	}
 }
