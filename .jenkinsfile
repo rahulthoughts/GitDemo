@@ -12,7 +12,7 @@ stage('Build')
 
 steps{
 
-bat mvn compile
+bat "mvn compile"
 
 }
 
@@ -48,7 +48,7 @@ stage('Unit Testing')
 
 steps{
 
-bat mvn test
+echo 'hello'
 
 }
 
