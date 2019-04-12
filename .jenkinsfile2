@@ -36,9 +36,8 @@ bat "mvn compile"
 }
 stage('Release')
 {
-when
-{
-branch 'refs/remotes/origin/master'
+when{
+env.GIT_BRANCH == "origin/master"
 }
 steps{
 echo 'releasing the project'
