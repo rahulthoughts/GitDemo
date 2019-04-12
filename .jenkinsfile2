@@ -38,7 +38,7 @@ stage('Release')
 {
 when
 {
-branch 'master'
+branch 'refs/remotes/origin/master'
 }
 steps{
 echo 'releasing the project'
