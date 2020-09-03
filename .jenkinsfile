@@ -1,0 +1,87 @@
+pipeline{
+
+agent any
+
+stages
+
+{
+
+stage('Build')
+
+{
+
+steps{
+
+bat "mvn compile"
+
+}
+
+}
+
+stage('deploy')
+
+{
+
+when{
+
+branch "master"
+
+}
+
+steps{
+
+echo develop
+
+}
+
+}
+
+stage('test')
+
+{
+
+parallel{
+
+stage('Unit Testing')
+
+{
+
+steps{
+
+echo 'hello'
+
+}
+
+}
+
+stage('UI Testing')
+
+{
+
+steps{
+
+bat "mvn test"
+
+}
+
+}
+
+}
+
+}
+
+stage('Release')
+
+{
+
+steps{
+
+echo 'Releasing it'
+
+}
+
+}
+
+}
+
+}
